@@ -8,6 +8,9 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/purify/%{name}-%{version}.tar.gz
 # Source0-md5:	bc243bfcec09574a6e416f9468a982e0
 URL:		http://purify.sourceforge.net/
+BuildRequires:	fam-devel
+BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -29,24 +32,22 @@ siê przynajmniej z GNOME.
 
 %build
 %configure
-%{__make} \
-	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags}"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_desktopdir}/%{name}
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
-install src/pureadmin $RPM_BUILD_ROOT%{_bindir}
-install tools/pureadminsearch $RPM_BUILD_ROOT%{_bindir}
-install tools/pureadmin.desktop $RPM_BUILD_ROOT%{_desktopdir}
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README README.Hacking NEWS AUTHORS ChangeLog COPYING
+%doc AUTHORS ChangeLog NEWS README README.Hacking
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/pureadmin
 %{_desktopdir}/pureadmin.desktop
+%{_pixmapsdir}/pureadmin.png
