@@ -5,7 +5,7 @@ Version:	0.1.10
 Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/sourceforge/purify/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/purify/%{name}-%{version}.tar.gz
 # Source0-md5:	bc243bfcec09574a6e416f9468a982e0
 URL:		http://purify.sourceforge.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -19,6 +19,10 @@ mind so it should integrate nicely with at least GNOME.
 
 %description -l pl
 PureAdmin jest graficznym narzêdziem do zarz±dzania serwerem PureFTPd.
+U¿ywa widgetów GTK+2, dziêki czemu nie jest zale¿ne od konkretnego
+¶rodowiska, jak GNOME czy KDE. Jest jednak zaprojektowane zgodnie z
+zaleceniami GNOME Human Interface Guidelines, aby ³adnie integrowa³o
+siê przynajmniej z GNOME.
 
 %prep
 %setup -q
