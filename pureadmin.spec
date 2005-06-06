@@ -9,6 +9,7 @@ Source0:	http://dl.sourceforge.net/purify/%{name}-%{version}.tar.gz
 # Source0-md5:	7549ae9278b2dd629058848c86859b4e
 URL:		http://purify.sourceforge.net/
 BuildRequires:	fam-devel
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
