@@ -11,6 +11,7 @@ URL:		http://purify.sourceforge.net/
 BuildRequires:	fam-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 1:2.0.0
+BuildRequires:	libglade2-devel
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
