@@ -1,12 +1,12 @@
 Summary:	Tool for management PureFTPd
 Summary(pl):	Narzêdzie do zarz±dzania PureFTPd
 Name:		pureadmin
-Version:	0.2.2
+Version:	0.3
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/purify/%{name}-%{version}.tar.gz
-# Source0-md5:	7549ae9278b2dd629058848c86859b4e
+# Source0-md5:	f7dc9fc7163b957bbcec1d4b2eec196d
 URL:		http://purify.sourceforge.net/
 BuildRequires:	fam-devel
 BuildRequires:	gettext-devel
