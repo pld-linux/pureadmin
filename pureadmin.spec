@@ -1,5 +1,5 @@
 Summary:	Tool for management PureFTPd
-Summary(pl):	Narzêdzie do zarz±dzania PureFTPd
+Summary(pl.UTF-8):   NarzÄ™dzie do zarzÄ…dzania PureFTPd
 Name:		pureadmin
 Version:	0.3
 Release:	1
@@ -22,12 +22,12 @@ not dependent on a specific desktop environment such as GNOME or KDE.
 It is, however, designed with the GNOME Human Interface Guidelines in
 mind so it should integrate nicely with at least GNOME.
 
-%description -l pl
-PureAdmin jest graficznym narzêdziem do zarz±dzania serwerem PureFTPd.
-U¿ywa widgetów GTK+2, dziêki czemu nie jest zale¿ne od konkretnego
-¶rodowiska, jak GNOME czy KDE. Jest jednak zaprojektowane zgodnie z
-zaleceniami GNOME Human Interface Guidelines, aby ³adnie integrowa³o
-siê przynajmniej z GNOME.
+%description -l pl.UTF-8
+PureAdmin jest graficznym narzÄ™dziem do zarzÄ…dzania serwerem PureFTPd.
+UÅ¼ywa widgetÃ³w GTK+2, dziÄ™ki czemu nie jest zaleÅ¼ne od konkretnego
+Å›rodowiska, jak GNOME czy KDE. Jest jednak zaprojektowane zgodnie z
+zaleceniami GNOME Human Interface Guidelines, aby Å‚adnie integrowaÅ‚o
+siÄ™ przynajmniej z GNOME.
 
 %prep
 %setup -q
