@@ -1,5 +1,5 @@
 Summary:	Tool for management PureFTPd
-Summary(pl.UTF-8):   Narzędzie do zarządzania PureFTPd
+Summary(pl.UTF-8):	Narzędzie do zarządzania PureFTPd
 Name:		pureadmin
 Version:	0.3
 Release:	1
