@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/purify/%{name}-%{version}.tar.gz
 # Source0-md5:	f7dc9fc7163b957bbcec1d4b2eec196d
 URL:		http://purify.sourceforge.net/
 BuildRequires:	fam-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	libglade2-devel
 BuildRequires:	pkgconfig
